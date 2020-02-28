@@ -52,11 +52,12 @@
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"/>
 
                 <data
-                    android:host="liveperson.com"
-                    android:pathPrefix="/deeplink"
-                    android:scheme="http" />
+                    android:host="lp-test-41839.firebaseapp.com"
+                    android:pathPrefix="/echo"
+                    android:scheme="https" />
             </intent-filter>
         </activity>
 

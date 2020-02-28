@@ -1,0 +1,5 @@
+.gradle
+.idea
+**/*.iml
+local.properties
+sample_app/google-services.json

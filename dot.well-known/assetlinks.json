@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.liveperson.sample.app.deeplink",
+    "sha256_cert_fingerprints":
+    ["4E:C9:35:9A:2F:2B:41:3D:8A:E8:6A:02:16:02:2F:A8:7D:04:10:64:70:04:61:7B:D0:99:94:86:0E:9F:D8:54"]
+  }
+}]
