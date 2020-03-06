@@ -48,7 +48,7 @@
             android:name=".FragmentContainerActivity"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity android:name=".DeepLinkActivity">
-            <intent-filter>
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
