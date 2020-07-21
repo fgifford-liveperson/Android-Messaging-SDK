@@ -487,7 +487,8 @@ public class MessagingActivity extends AppCompatActivity {
 		LPAuthenticationParams authParams = new LPAuthenticationParams(getAuthType());
 		String authCode = mAuthCodeView.getText().toString().trim();
 		String publicKey = mPublicKey.getText().toString().trim();
-		authParams.setAuthKey(authCode);
+//		authParams.setAuthKey(authCode);
+		authParams.setHostAppJWT(authCode);
 		authParams.addCertificatePinningKey(publicKey);
 		return authParams;
 	}
