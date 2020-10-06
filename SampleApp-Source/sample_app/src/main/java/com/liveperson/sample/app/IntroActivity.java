@@ -17,6 +17,11 @@ import com.liveperson.messaging.sdk.api.callbacks.LogoutLivePersonCallback;
 import com.liveperson.sample.app.utils.SampleAppStorage;
 import com.liveperson.sample.app.notification.NotificationUI;
 
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.distribute.Distribute;
+
 public class IntroActivity extends AppCompatActivity {
 
 	EditText mAccountIdEditText;
@@ -26,6 +31,8 @@ public class IntroActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_intro);
+
+		AppCenter.start(getApplication(), "9845b56c-b117-477b-a2b5-9d695985a8d9", Analytics.class, Crashes.class, Distribute.class);
 
 		mAccountIdEditText = findViewById(R.id.account_id_edit_text);
 		mAppinstallidEditText = findViewById(R.id.appinstallid_edit_text);
